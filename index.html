@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Todo</title>
+</head>
+<body>
+
+ <div class="container">
+
+  <h1 class="heading">Todo list is for you!</h1>
+
+  <form class="form">
+
+    <div class="input-wrapper d-flex">
+      <div class="input me-5 mt-3">
+        <input class="form-input form-control" type="text" placeholder="todo kiriting" required autocomplete="off">
+      </div>
+
+      <div class="input mt-3">
+        <input class="form-input-who form-control" type="text" placeholder="who" required autocomplete="off">
+      </div>
+    </div>
+
+    <div class="btn-wrapper d-flex">
+      <button class="button btn btn-danger mt-3">Check</button>
+      <button class="btn btn-info mt-3 ms-4" type="reset">Reset</button>
+    </div>
+
+  </form>
+
+  <ul class="list list-unstyled">
+  </ul>
+ </div>
+
+  <script src="./js/apps.js"></script>
+</body>
+</html>

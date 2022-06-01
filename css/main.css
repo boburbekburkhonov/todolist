@@ -1,0 +1,81 @@
+body {
+  padding-top: 100px;
+  display: flex;
+  background-image: url(../images/yellow-list-top-view_23-2148475388.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.form {
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.445);
+  border: 5px outset black;
+  border-radius: 30px;
+}
+
+.heading {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 90px;
+  font-weight: 700;
+  color: dodgerblue;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateY(90deg);
+  }
+}
+
+.input {
+  max-width: 400px;
+  width: 100%;
+}
+
+.list {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(127, 255, 212, 0.551);
+  border: 5px outset black;
+  padding: 70px 140px;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+
+li {
+  /* color: rgb(0, 0, 0); */
+  font-size: 60px;
+}
+
+li + li {
+  margin-left: 70px;
+}
+
+/* li:nth-child(even) {
+  order: 0;
+} */
+/*
+li:nth-child(odd) {
+  margin-right: ;
+} */
+
+.btn-wrapper {
+  width: 200px;
+}
+
+button {
+  width:200px;
+}
