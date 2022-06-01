@@ -42,7 +42,6 @@ body {
   margin: auto;
   margin-top: 100px;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -56,21 +55,13 @@ body {
 
 
 li {
-  /* color: rgb(0, 0, 0); */
+  color: rgb(0, 0, 0);
   font-size: 60px;
 }
 
 li + li {
   margin-left: 70px;
 }
-
-/* li:nth-child(even) {
-  order: 0;
-} */
-/*
-li:nth-child(odd) {
-  margin-right: ;
-} */
 
 .btn-wrapper {
   width: 200px;
