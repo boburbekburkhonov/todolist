@@ -59,10 +59,6 @@ li {
   font-size: 60px;
 }
 
-li + li {
-  margin-left: 70px;
-}
-
 .btn-wrapper {
   width: 200px;
 }

@@ -12,9 +12,11 @@ elForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
 
   const inputValue = elFormInput.value.toUpperCase();
+  const inputValueWho = elFormInputWho.value.toUpperCase();
 
   const todo = {
     name: inputValue,
+    who: inputValueWho,
     id: todos.length,
   }
 
@@ -25,36 +27,11 @@ elForm.addEventListener("submit", (evt) => {
   for(let element of todos) {
     const newLi = document.createElement("li");
 
-    newLi.textContent = element.name
+    newLi.textContent = `${element.name} ${element.who}`
 
     elList.appendChild(newLi);
-  }
-})
-
-
-elForm.addEventListener("submit", (evt) => {
-  evt.preventDefault();
-
-  const inputValueWho = elFormInputWho.value.toUpperCase();
-
-  const todoWho = {
-    name: inputValueWho,
-    id: todosWho.length,
-  }
-
-  todosWho.push(todoWho);
-  elFormInputWho.value = null;
-
-
-  for(let item of todosWho) {
-    const newLiWho = document.createElement("li")
-
-    newLiWho.textContent = item.name;
-
-    elList.appendChild(newLiWho)
   }
 
   elBody.style.backgroundImage = "none"
   elBody.style.backgroundImage = "url(../images/pman.webp)"
-
 })
